@@ -20,6 +20,7 @@ export default class EditForum extends Component {
         ownerUrl: this.props.forum.extra.ownerUrl,
         contentType: this.props.forum.extra.contentType || '',
         sugerencia: this.props.forum.extra.sugerencia,
+        iconUrl: this.props.forum.extra.iconUrl,
         palabrasCierre: this.props.forum.extra.palabrasCierre,
         linkCierre: this.props.forum.extra.linkCierre
       },
@@ -106,6 +107,7 @@ export default class EditForum extends Component {
         richSummary,
         contentType,
         sugerencia,
+        iconUrl,
         palabrasCierre,
         linkCierre
       }
@@ -205,6 +207,16 @@ export default class EditForum extends Component {
                   placeholder={t('admin-topics-form.placeholder.cover')}
                   value={coverUrl}
                   onChange={this.handleChange('coverUrl')} />
+              </div>
+            </fieldset>
+            <fieldset>
+              <label>{t('forum.form.icon')}</label>
+              <div className='form-group clearfix summary'>
+                <input
+                  type='text'
+                  placeholder={t('admin-topics-form.placeholder.cover')}
+                  value={iconUrl}
+                  onChange={this.handleChangeExtra('iconUrl')} />
               </div>
             </fieldset>
             <fieldset>

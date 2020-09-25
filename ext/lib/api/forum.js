@@ -59,6 +59,7 @@ function createForum(req, res, next) {
       closingAt: req.body.closingAt,
       contentType: req.body.contentType,
       palabrasCierre: req.body.palabrasCierre,
+      iconUrl: req.body.icon,
       linkCierre: req.body.linkCierre,
       hidden: false
     },

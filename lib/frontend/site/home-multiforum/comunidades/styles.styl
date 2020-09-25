@@ -1,0 +1,78 @@
+.intro-comunidades
+  padding: 0
+  height: 700px
+  background-image: unquote("url('lib/frontend/site/home-multiforum/background-comunidades-activas.png')")
+  background-size: cover
+  @media (max-width: 768px)
+    height: 580px
+  .container-fluid
+    height: 100%
+    display: flex
+    align-items: center
+    text-align: center;
+  h2 
+    font-family 'Dosis', sans-serif
+    text-transform: uppercase
+    font-size: 40px
+    color: $secondary-color;
+    font-weight: bold
+    margin: 20px 0
+  p
+    font-size: 24px
+    color: white
+    line-height: 1.2
+    margin-top: 10px
+  .arrow-rotate
+    transform: rotate(90deg);
+    margin-top: 20px
+    width: 35px
+  .logo
+    width: 300px
+.comunidades-carousel
+  padding: 0 20px;
+  button.flickity-prev-next-button
+    &.previous
+      left 0
+      @media (min-width: 576px)
+        left -70px
+    &.next
+      right 0
+      @media (min-width: 576px)
+        right -70px
+.comunidad-col 
+.comunidad-carousel-item
+  text-align: center
+  cursor: pointer
+  display: block;
+  // flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+  padding: 10px 0;
+  h4
+    font-family 'Dosis', sans-serif
+    text-transform: uppercase
+    line-height: 1.2;
+    font-size: 25px
+    text-align: center
+    flex: 1 0 auto;
+    color: $main-color;
+  .icon-wrapper
+    height: 100px;
+    background-color: #f9f9f9;
+    // border-radius:100%
+    display: inline-block
+    // overflow: hidden
+    img
+      padding: 3px;
+      width: 100px;
+      height:100px;
+      box-sizing: border-box;
+      border-radius: 100px;
+  &.selected
+    .icon-wrapper
+      border-radius: 100px;
+      border: solid 4px $secondary-color;
+      margin: -4px;
+.flickity-resize
+  .comunidad-col
+    // height: calc(100% - 40px)
