@@ -1,0 +1,215 @@
+.topic-article-wrapper
+  padding-top: 1em
+  width: 100%
+  @import './admin-actions/styles'
+  @import './header/styles'
+  @import './content/styles'
+  @import './footer/styles'
+  @import './vote/styles'
+  @import './poll/styles'
+  @import './cause/styles'
+  @import './social/styles'
+  @import './comments/styles'
+  @import './slider/styles'
+  @import './hierarchy/styles'
+  @import './change-vote-button/styles'
+  @import './required/styles'
+
+  /* ext */
+  position: relative
+  margin-left: auto
+  margin-right: auto
+  padding: 40px 5px
+  max-width: 100%
+  background-color: #f9f9f9
+  @media (min-width: 991px)
+    display: flex
+    flex-direction: row
+
+
+  @media (min-width: 544px)
+    padding-top: 60px
+    padding-left: 30px
+    padding-right: 30px
+
+  @media (min-width: 768px)
+    top: -60px
+
+  @media (min-width: 991px)
+    max-width: 1000px
+    
+  .topic-admin-actions a:hover
+    color: $main-color-resalted
+    
+  .topic-article-header
+    margin-top: 0
+
+    h1
+      font-size: 2.5em
+
+  .topic-article-content
+    font-family: inherit
+    font-weight: 300
+    padding-left: 0
+    padding-right: 0
+    color: #111
+    span
+      font-weight:600
+    li, ol {
+      font-size: 16px
+    }
+
+  .topic-comments
+    border: none
+    background: none
+        
+  
+  @import './topic-action/styles.styl'
+  @import './header/styles.styl'
+  @import './social/styles.styl'
+  @import './topic-action/styles.styl'
+  @import './topic-action/topic-range/styles.styl'
+  @import './lateral-bar/styles.styl'
+  @import './comments/list/comment/header/styles.styl'
+
+  .vote-options
+    margin-left: auto
+    margin-right: auto
+
+  button.btn.btn-primary
+    width:100%
+
+  .topics-hierarchy
+    h4
+      font-size:1.2em
+      padding:2em
+    ol
+      font-weight:100
+
+  hr
+    font-size 15px
+    margin 35px 0 30px
+    height auto
+    border 0
+    line-height 0
+    text-align center
+    letter-spacing 8px
+    color #444
+
+    &:after
+      content '· · ·'
+
+.topic-overlay
+  position fixed
+  top 0
+  right 0
+  width 100%
+  height 100%
+  z-index 1
+  background rgba(0,0,0,0.5)
+
+  @media screen and (min-width 701px)
+    display none
+
+.topic-article-content
+  max-width 600px
+  margin 0 auto
+  padding-left 15px
+  padding-right 15px
+
+.embed-container
+  position relative
+  padding-bottom 56.25%
+  height 0
+  overflow hidden
+  max-width 100%
+
+  iframe
+  object
+  embed
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
+    border none
+
+.no-topics
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+    width 100%
+    button
+      margin-top 20px
+    p
+      color #888
+
+topicBoxSize = 15
+topicColor = #333
+topicColor2 = #999
+
+.loader-wrapper
+  position relative
+  flex 1
+
+  .topic-loader
+    position absolute
+    left 50%
+    top 50%
+    border-radius 100%
+    width topicBoxSize * 1px
+    height topicBoxSize * 1px
+    box-shadow topicBoxSize*1px topicBoxSize*1px topicColor2,
+    topicBoxSize*-1px topicBoxSize*1px topicColor,
+    topicBoxSize*-1px topicBoxSize*-1px topicColor2,
+    topicBoxSize*1px topicBoxSize*-1px topicColor
+    animation topic-loader-spin ease infinite 4s
+    transition-property opacity
+
+    @-webkit-keyframes topic-loader-spin {
+      0%,
+      100% {
+        box-shadow: topicBoxSize*1px topicBoxSize*1px topicColor2,
+        topicBoxSize*-1px topicBoxSize*1px topicColor,
+        topicBoxSize*-1px topicBoxSize*-1px topicColor2,
+        topicBoxSize*1px topicBoxSize*-1px topicColor
+      }
+
+      25% {
+        box-shadow: topicBoxSize*-1px topicBoxSize*1px topicColor,
+        topicBoxSize*-1px topicBoxSize*-1px topicColor2,
+        topicBoxSize*1px topicBoxSize*-1px topicColor,
+        topicBoxSize*1px topicBoxSize*1px topicColor2
+      }
+
+      50% {
+        box-shadow: topicBoxSize*-1px topicBoxSize*-1px topicColor2,
+        topicBoxSize*1px topicBoxSize*-1px topicColor,
+        topicBoxSize*1px topicBoxSize*1px topicColor2,
+        topicBoxSize*-1px topicBoxSize*1px topicColor
+      }
+
+      75% {
+        box-shadow: topicBoxSize*1px topicBoxSize*-1px topicColor,
+        topicBoxSize*1px topicBoxSize*1px topicColor2,
+        topicBoxSize*-1px topicBoxSize*1px topicColor,
+        topicBoxSize*-1px topicBoxSize*-1px topicColor2
+      }
+    }
+
+/* ext */
+.secondary-wrapper
+  flex-direction: column
+  width:100%
+  
+iframe
+  @media (min-width: 700px)
+    width: 600px
+    height: 400px
+
+.topic-article-wrapper.large
+  max-width:1000px
+
+.llamado-content
+  margin-top: 30px

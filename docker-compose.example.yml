@@ -1,0 +1,74 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: ["./node_modules/.bin/gulp", "bws"]
+    environment:
+      - NODE_ENV=development
+      - DEBUG=democracyos*
+      - MONGO_URL=mongodb://mongo/mi-consultapublica
+      # Requerido: Genere un token para JWT
+      - JWT_SECRET=
+      # Importante: Defina el "Staff" de administradores para que en su registro el sistema le de privilegios de admin
+      # Para varios admins:
+      # - STAFF=hola@miemail.com,usuario@otroemail.com,otrousuario@nuevoemail.com
+      # Para un solo admin:
+      - STAFF=hola@miemail.com
+      # Imágenes principales
+      - LOGO=/lib/frontend/site/home-multiforum/logo-header.svg
+      - LOGO_MOBILE=/lib/frontend/site/home-multiforum/logo-header.svg
+      - LOGO_FOOTER=/lib/frontend/site/home-multiforum/logo-footer.svg
+      - LOGO_CENTRAL_HOME=/lib/frontend/site/home-multiforum/logo-central-home.png
+      - BACKGROUND_HOME=/lib/frontend/site/home-multiforum/background-home.jpeg
+      - ICONO_HOME_INFORMATE=/lib/frontend/site/home-multiforum/icono-home-informate.svg
+      - ICONO_HOME_PARTICIPA=/lib/frontend/site/home-multiforum/icono-home-participa.svg
+      - ICONO_HOME_COMPARTI=/lib/frontend/site/home-multiforum/icono-home-comparti.svg
+      # Organización
+      - ORGANIZATION_EMAIL=miconsultadigital@midominio.com.ar
+      - ORGANIZATION_NAME=Mi Consulta Digital
+      - BAJADA_PLATAFORMA=Construyamos un país más abierto, transparente y colaborativo.
+      # Social media y email settings
+      - SOCIALSHARE_SITE_NAME=Mi Consulta Digital
+      - SOCIALSHARE_SITE_DESCRIPTION=Plataforma de participación ciudadana
+      - SOCIALSHARE_IMAGE=https://urlexterno.com/mi-imagen-externa.png
+      - SOCIALSHARE_DOMAIN=miconsultadigital.midominio.com
+      - SOCIALSHARE_TWITTER_USERNAME=@miConsultaDigital
+      - TWEET_TEXT=Participá en {organizationName}.\n\n{bajadaPlataforma}\n
+      # Configuracion del mailer
+      - NOTIFICATIONS_MAILER_EMAIL=miconsultapublica@midominio.com
+      - NOTIFICATIONS_MAILER_NAME=Mi Consulta Digital
+      - NOTIFICATIONS_NODEMAILER={"host:"xxxxx.smtp.com","port":465,"secure":true,"auth":{"user":"xxxxxxxx","pass":"xxxxxxx"}} #Cambiar
+      # El mail del que recibe los pedidos de verificación de cuentas
+      - VERIFY_USER_REQUEST_EMAIL=unmail@correo.com
+      # Estas variable hacen que el español sea el idioma predeterminado;
+      # la segunda es para obligar el idioma (sino lo autodetecta y puede usar otro)
+      - LOCALE=es
+      - ENFORCE_LOCALE=true
+      # Si está bloqueado el acceso al público, automáticamente se bloquea el sign up (aunque este
+      # último esté en allow/true). Pero si el acceso público está abierto se puede bloquear o no el sign up.
+      - ALLOW_PUBLIC_ACCESS=true
+      - ALLOW_PUBLIC_SIGN_UP=true
+    links:
+      - mongo
+    ports:
+      - 3000:3000
+    volumes:
+      - ./ext/lib:/usr/src/ext/lib
+      - ./public:/usr/src/public
+    tty: true
+
+  mongo:
+    image: mongo:3.2
+    ports:
+      - 27017:27017
+    volumes:
+      - ./tmp/db:/data/db
+
+#  mailserver:
+#    image: namshi/smtp
+#    environment:
+#      - GMAIL_USER=mi-usuario@gmail.com
+#      - GMAIL_PASSWORD=mi-contraseña-que-no-debo-publicar

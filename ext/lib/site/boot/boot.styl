@@ -1,0 +1,28 @@
+// la siguiente línea carga del código madre (lib/frontend/site/boot/boot.styl) las siguiente rutas:
+// @import 'node_modules/democracyos-bootstrap/dist/css/bootstrap.min.css'
+// @import 'lib/frontend/layout'
+// @import 'lib/frontend/site/*/styles'
+@import 'lib/frontend/site/boot/boot'
+
+@import '../../*/styles'
+@import '../*/styles'
+
+// breadcrumb del "help" de la página
+.breadcrumb 
+  a
+    color: $main-color
+  a:hover
+    color: $main-color-resalted
+  
+// aparece en sección "help" de la página, fondos del menú izquierdo
+.page-sidebar .nav-pills > li.active > a,
+.page-sidebar .nav-pills > li.active > a:hover,
+.page-sidebar .nav-pills > li.active > a:focus
+  background-color: $main-color
+  
+.page-sidebar .nav-pills a
+  color: $main-color
+  
+// iconitos de fb y tw en las cajas de los topics en la home
+a.icon-social-facebook, a.icon-social-twitter
+  color: $main-link-color
