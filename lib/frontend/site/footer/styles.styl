@@ -1,8 +1,8 @@
 .ext-footer
-  padding 60px 0
+  padding 60px 0 0
   margin-top 30px
   font-size 1em
-  background-color #fff
+  background-color #f5f5f5
   border-top: 1px solid rgba(0, 0, 0, 0.1)
 
   .footer
@@ -15,7 +15,7 @@
     justify-content space-between
 
   .institutional
-    flex-grow 2
+    flex-grow 0
 
     p
       max-width 560px
@@ -36,21 +36,37 @@
   .gob
     padding-right 30px
     margin-bottom 30px
+    a
+      padding-left 20px
+      display inline-block
+      &:first-of-type
+        padding-right 20px
+        padding-left 0
+        border-right 1px solid black
+        img
+          height 80px
+
 
     img
       max-width 100%
-      width 300px
+      height 60px
 
   .menu
     padding 0 15px
-    text-align left
+    text-align right
 
     &:first-of-type
       flex-grow 3
+      text-align left
+      a
+        color $main-color
 
     a
       display block
       padding 6px 0
+      font-family 'Staatliches', cursive;
+      font-size 16px
+      color black
 
   @media only screen and (max-width: 687px)
     .footer
@@ -64,9 +80,33 @@
         display block
         line-height 1em
 
-    .gob
-      img
-        width 300px
-
     .institutional
       padding 0 15px
+  .footer-support
+    background-color #e8e8e8
+    text-align: center
+    font-size: 16px
+    padding 20px
+    max-width: unset
+    justify-content: center
+  .footer-democracia
+    height 50px
+    background-color $main-color
+    color: white
+    max-width: unset
+    justify-content: center
+    align-items: center
+    font-size 14px
+    a
+      display: inline-block
+      color: white
+      position: absolute
+      left: 10%
+      font-size: 12px
+      img
+        height: 30px
+        display: inline-block
+        padding: 0 10px
+        vertical-align: top
+      span
+        display: inline-block

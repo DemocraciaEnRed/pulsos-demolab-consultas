@@ -3,15 +3,22 @@
 @import './search/results-search/styles.styl'
 
 .jumbotron_body
-  padding: 50px 0 !important
+  padding: 100px 0 50px !important
   .container
     .lead
       font-size:18px
       margin-top: 5px
       &.highlight
-        font-size:22px
-        font-weight: 400
+        display: inline-block
+        padding: 15px
+        background-color: white
+        font-family: Raleway;
+        color: black
+        font-size:16px
+        font-weight: 600
         text-shadow: none !important
+        max-width: 560px
+        line-height: 1.25
       span
         color:$main-color
     .participar
@@ -31,7 +38,8 @@
       font-size: 35px
       text-align: center
       font-weight: 500
-      margin-bottom: 20px
+      margin-bottom: 40px
+      color: $main-color
 
     .forums-list-item
       max-width: 100%
@@ -42,7 +50,27 @@
         width: 440px
 
   .cover
-    text-align: center
+    min-height: 500px
+    background-position: top
+    img
+      display: block
+    .btn
+      display: block;
+      margin: 0 auto;
+    .lead.block
+      display: inline-block
+      background-color: $primary-color
+      color: white
+      text-transform: uppercase
+      padding: 10px 15px
+      font-size: 20px
+      font-family: 'Staatliches', cursive;
+    .btn-participa
+      color: black
+      font-size: 26px
+      background-color: transparent
+      outline: none !important
+      box-shadow: none !important
 
     h1
       max-width: 500px
@@ -87,7 +115,6 @@
 
 
   .section-icons
-    font-weight:600
     margin-top:20px
     margin-bottom:20px
     @media (max-width: 760px)
@@ -96,20 +123,23 @@
       margin-left:10px
     .section-icon
       display: inline-block
+      text-align: center
+      padding: 0 35px
       @media (max-width: 760px)
         display:flex
         flex-direction:column
-      width:30% !important
       .icon
         width:100px
-        float: left
+        display: inline-block
       .text
-        padding-left: 115px
-        @media (max-width: 760px)
-          padding-left:10px
-        padding-top: 10px
-        font-weight: 100
-        font-size: 14px
+        text-align: left
+        h5
+          font-size: 22px
+          color: $main-color
+          font-weight: 400
+        p
+          font-size: 14px
+          line-height: 1.25
 
   .icon-arrow-down
     font-size: 20px
@@ -123,16 +153,23 @@
     .btn
     .dropdown-element
     .dropbtn
-      min-width:130px
-      padding: 5px 25px 5px 25px !important
+      font-family: 'Staatliches', cursive;
+      min-width: 200px;
+      padding: 8px 0;
+      font-size: 16px;
+      margin: 0 15px;
 
     .btn-secondary
       background-color: #fff
+      color: $main-color-resalted
+      border: 1px solid $main-color-resalted
+      box-shadow: none
 
     .btn-active
-      text-underline: none
-      background-color: #e9e9e9
-      color: $main-color
+      background-color: $main-color
+      border: 1px solid $main-color
+      box-shadow: none
+      color: white
       &:focus
         outline: none
 
