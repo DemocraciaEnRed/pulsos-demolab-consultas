@@ -13,10 +13,11 @@
     flex-wrap wrap
     align-items flex-start
     justify-content space-between
+    &.container
+      margin-bottom: 30px;
 
   .institutional
     flex-grow 0
-
     p
       max-width 560px
   a
@@ -45,11 +46,14 @@
         border-right 1px solid black
         img
           height 80px
-
+          @media (max-width: 500px)
+            height: 60px
 
     img
       max-width 100%
       height 60px
+      @media (max-width: 500px)
+        height: 40px
 
   .menu
     padding 0 15px
@@ -76,12 +80,14 @@
 
     .menu
       padding-right 0
+      text-align: left
       a
         display block
         line-height 1em
 
     .institutional
       padding 0 15px
+      flex-grow: 1;
   .footer-support
     background-color #e8e8e8
     text-align: center
@@ -89,20 +95,55 @@
     padding 20px
     max-width: unset
     justify-content: center
+    flex-direction: column;
+    align-items: center;
+    .logos-wrapper
+      h6
+        margin: 15px 0
+      a
+        display: inline-block
+        margin: 0 7px;
+        img 
+          max-height: 100%
+      .logo-corona
+        height: 13px
+      .logo-avina,
+      .logo-nimd
+        height: 25px
+      .logo-fescol
+        height: 60px
+      .logo-extituto
+        height: 40px
+      .logo-ideemos
+        height: 55px
+      .logo-diseno
+        height: 17px
+        margin: 0 7px
+
   .footer-democracia
-    height 50px
+    min-height 50px
     background-color $main-color
     color: white
     max-width: unset
     justify-content: center
     align-items: center
     font-size 14px
+    @media (max-width: 768px)
+      justify-content: space-around;
+    @media (max-width: 500px)
+      flex-direction: row;
+      padding-bottom: 20px
     a
       display: inline-block
       color: white
       position: absolute
       left: 10%
       font-size: 12px
+      @media (max-width: 768px)
+        position: relative
+        left: auto
+      @media (max-width: 500px)
+        margin: 15px 0;
       img
         height: 30px
         display: inline-block

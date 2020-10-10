@@ -1,6 +1,7 @@
 @import './forum-container/styles.styl'
 @import './search/styles.styl'
 @import './search/results-search/styles.styl'
+@import './comunidades/styles.styl'
 
 .jumbotron_body
   padding: 100px 0 50px !important
@@ -125,11 +126,13 @@
       display: inline-block
       text-align: center
       padding: 0 35px
+      align-items: center;
       @media (max-width: 760px)
         display:flex
         flex-direction:column
       .icon
-        width:100px
+        max-height: 170px
+        max-width: 170px
         display: inline-block
       .text
         text-align: left
@@ -209,4 +212,30 @@
   height: 50px
 
 
+.consultas
+  padding-top: 0
+  text-align: center
+  .filter-wrapper
+    margin-top: 20px    
+  .btn-item-filter
+    font-family: 'Staatliches', cursive;
+    min-width: 200px;
+    padding: 8px 0;
+    font-size: 16px;
+    margin: 20px 15px 0;
+    background-color: #fff
+    color: $main-color-resalted
+    border: 1px solid $main-color-resalted
+    box-shadow: none
+    &.selected
+      background-color: $main-color
+      border: 1px solid $main-color
+      box-shadow: none
+      color: white
+      &:focus
+        outline: none
+  p
+    margin-top: 40px
 
+.topics-container
+  margin-top: 60px
