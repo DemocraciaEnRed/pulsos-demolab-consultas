@@ -1,33 +1,30 @@
 .intro-comunidades
-  padding: 0
-  height: 700px
-  background-image: unquote("url('lib/frontend/site/home-multiforum/background-comunidades-activas.png')")
-  background-size: cover
-  @media (max-width: 768px)
-    height: 580px
-  .container-fluid
-    height: 100%
-    display: flex
-    align-items: center
-    text-align: center;
-  h2 
-    font-family 'Dosis', sans-serif
-    text-transform: uppercase
-    font-size: 40px
-    color: $secondary-color;
-    font-weight: bold
-    margin: 20px 0
+  background-color $main-color
+  color white
+  padding 60px 0 120px
+  .row div
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+    align-items: baseline
+    @media (max-width: 500px)
+      flex-direction: column;
+  h2
+    font-size 35px
+    flex 1
+    span
+      font-size 45px
+      display block
+      color $main-link-color
   p
-    font-size: 24px
-    color: white
-    line-height: 1.2
-    margin-top: 10px
-  .arrow-rotate
-    transform: rotate(90deg);
-    margin-top: 20px
-    width: 35px
-  .logo
-    width: 300px
+    font-size 16px
+    flex 1
+    text-align right
+    line-height 1.3
+#comunidades
+  top: -120px;
+  position: relative;
+  padding-bottom: 0
 .comunidades-carousel
   padding: 0 20px;
   button.flickity-prev-next-button
@@ -39,7 +36,8 @@
       right 0
       @media (min-width: 576px)
         right -70px
-.comunidad-col 
+.comunidad-col
+  height: 235px
 .comunidad-carousel-item
   text-align: center
   cursor: pointer
@@ -47,32 +45,27 @@
   // flex-direction: column;
   align-items: center;
   margin: 0 10px;
-  padding: 10px 0;
+  padding: 30px;
+  box-shadow: 0 2px 2px 0 rgba(98, 94, 94, 0.25);
+  width: 230px
+  height: 230px
+  background-color: white
   h4
-    font-family 'Dosis', sans-serif
+    font-family 'Staatliches', sans-serif
     text-transform: uppercase
     line-height: 1.2;
-    font-size: 25px
+    font-size: 22px
     text-align: center
     flex: 1 0 auto;
     color: $main-color;
+    margin: 20px 0 0;
   .icon-wrapper
     height: 100px;
-    background-color: #f9f9f9;
-    // border-radius:100%
     display: inline-block
-    // overflow: hidden
     img
-      padding: 3px;
       width: 100px;
       height:100px;
       box-sizing: border-box;
-      border-radius: 100px;
-  &.selected
-    .icon-wrapper
-      border-radius: 100px;
-      border: solid 4px $secondary-color;
-      margin: -4px;
 .flickity-resize
   .comunidad-col
     // height: calc(100% - 40px)
