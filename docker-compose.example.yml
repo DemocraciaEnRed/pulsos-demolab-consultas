@@ -11,7 +11,7 @@ services:
       - DEBUG=democracyos*
       - MONGO_URL=mongodb://mongo/mi-consultapublica
       # Requerido: Genere un token para JWT
-      - JWT_SECRET=
+      - JWT_SECRET=_
       # Importante: Defina el "Staff" de administradores para que en su registro el sistema le de privilegios de admin
       # Para varios admins:
       # - STAFF=hola@miemail.com,usuario@otroemail.com,otrousuario@nuevoemail.com
