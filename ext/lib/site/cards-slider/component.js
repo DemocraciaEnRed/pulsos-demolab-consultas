@@ -73,7 +73,7 @@ export default class Carrusel extends Component {
     return (
       <div className="fondo-titulo">
         {this.props.topic &&
-          <h2 className='title'>Podés seguir participando</h2>
+          <h2 className='title'>Puedes seguir participando</h2>
         }
         <div className='topics-container' ref='carrusel'>
           {this.state.topics && this.state.topics.map((topic) => (

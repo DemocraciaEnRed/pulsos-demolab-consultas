@@ -6,13 +6,16 @@ Esta herramienta fue pensada por Democracia en Red, una organización argentina 
 
 ## Contacto
 
-**Dirección:** Ciudad Autónoma de Buenos Aires
+**Dirección:** Sede oficial Calle 36 No. 28ª - 41 Barrio La Soledad 
 
-**Código postal:** 
+**Código postal:** 111311
 
-**Teléfono:** 
+Oficinas Administrativas Carrera 30 No. 25 - 90 Piso 2
+Oficina de Atención al Ciudadano Primer Piso de la sede oficial
 
-**Correo electrónico:** [it@democracyos.org](mailto:it@democracyos.org)
+**Teléfono:** Linea Gratuita: 018000111818 -- Teléfono Pbx: 2088210
+
+**Correo electrónico:** [demolab.concejo@gmail.com](mailto:demolab.concejo@gmail.com)
 ​
 ## Tecnología
 
