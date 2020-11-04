@@ -7,13 +7,8 @@ export default class Slider extends Component {
     this.state = {
       options: [
         'Totalmente en contra',
-        'Muy en contra',
-        'En contra',
         'Un poco en contra',
-        'A favor',
         'Un poco a favor',
-        'A favor',
-        'Muy a favor',
         'Totalmente a favor',
       ]
     }

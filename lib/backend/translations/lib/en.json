@@ -99,7 +99,7 @@
   "admin-topics-form.description.poll-options": "",
   "admin-topics-form.description.resources": "Reference links to be listed at the end of the topic",
   "admin-topics-form.description.source": "",
-  "admin-topics-form.description.summary": "",
+  "admin-topics-form.description.summary": "If you copy the text from another place, remember to paste it from the option \"paste without formatting\"",
   "admin-topics-form.description.tag": "",
   "admin-topics-form.description.tags": "Tags for the topic, submit with ENTER or TAB",
   "admin-topics-form.description.forum-tags": "Suggested tags",

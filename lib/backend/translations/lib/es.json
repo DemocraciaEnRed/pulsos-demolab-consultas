@@ -104,7 +104,7 @@
   "admin-topics-form.description.poll-options": "",
   "admin-topics-form.description.resources": "Enlaces con referencias para sumar al final del contenido",
   "admin-topics-form.description.source": "",
-  "admin-topics-form.description.summary": "",
+  "admin-topics-form.description.summary": "Si copias el texto de otro lugar, recuerda pegarlo desde la opción \"pegar sin formato\"",
   "admin-topics-form.description.tag": "",
   "admin-topics-form.description.tags": "Etiquetas para el tema, separarlos apretando ENTER o TAB",
   "admin-topics-form.description.forum-tags": "Etiquetas sugeridas",
