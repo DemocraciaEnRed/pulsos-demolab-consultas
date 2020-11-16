@@ -20,26 +20,26 @@ Una vez registrada/o, en la parte superior derecha de la pantalla aparecerá tu 
 En **"Notificaciones”**, podrás determinar las preferencias de las notificaciones y en **“Configuración”** definir tus __datos personales__ (nombre, apellido), modificar tu __contraseña__ y agregar un __foto de perfil__. Para tener una foto de perfil hay que pegar la URL de una imagen tuya. La forma más sencilla de hacerlo es ir a cualquier de tus redes sociales y en la foto que quieras, hacer click derecho y seleccionar “copiar URL de la imagen”. Otra forma de hacerlo es subir alguna imagen a un servidor (como por ejemplo <a target="_blank" href="https://es.imgbb.com/">https://es.imgbb.com/</a> ) y hacer el mismo proceso.
 
 ### ¿Cómo está estructurado el sitio? <a name="estructura-del-sitio"></a>
-En el sitio se tratan temas e iniciativas, abiertas a la participación de la ciudadanía a través de comentarios y acciones. A estos temas e iniciativas las llamamos “Consulta”. 
+En el sitio se tratan temas e iniciativas, abiertas a la participación de la ciudadanía a través de comentarios y acciones. A estos temas e iniciativas las llamamos “Retos de ciudad”.
 
-Las consultas se muestran por los filtros de “nuevas”, “relevantes” y “finalizadas”. La consulta está dividida en **ejes**, que comprenden distintos aspectos del tema abierto a debate. Se puede ingresar a los ejes directamente desde la pantalla principal. 
+Las propuestas de los retos de ciudad se muestran por los filtros de “nuevas”, “relevantes” y “finalizadas”. Los retos de ciudad están divididos en ejes o propuestas, que comprenden distintos aspectos del tema abierto a debate. Se puede ingresar a ellos directamente desde la pantalla principal.
 
 ![Imagen](/ext/lib/site/help/consultas-search.png)   
 ![Imagen](/ext/lib/site/help/consulta-topics.png)
 
-Para ver la consulta completa y todos los ejes elige **“ver más información”**, donde hay una descripción y explicación de la consulta. 
+Para ver el reto completo y todas sus propuestas elige **“ver más información”**, donde hay una descripción y explicación del reto.
 
-Cada **eje** está abierto para participar durante un periodo de tiempo desde la fecha de publicación.
+Cada propuesta está abierta para participar durante un periodo de tiempo desde la fecha de publicación.
 
 ### ¿Cómo participo? <a name="participacion"></a>
 
-Se puede participar realizando comentarios y aportes en el **foro de debate**. Dentro de cada eje publicado, existe un espacio para hacer comentarios sobre las temáticas y expresarse sobre la discusión abierta. Una vez finalizado el tiempo estipulado de la consulta, no se puede seguir participando. 
+Se puede participar realizando comentarios y aportes en el **foro de debate**. Dentro de cada eje o propuesta publicada, existe un espacio para hacer comentarios sobre las temáticas y expresarse sobre la discusión abierta. Una vez finalizado el tiempo estipulado para el reto de ciudad, no se puede seguir participando.
 
 ![Imagen](/ext/lib/site/help/comentarios.png)
 
 También, se pueden **interactuar** con los comentarios de otras personas para debatir puntos de vista o aportar más información, contestando o valorando positiva o negativamente sus argumentos (con el “pulgar arriba” o “pulgar abajo”). Los comentarios se pueden ordenar de acuerdo a su “relevancia” o cronológicamente (“más recientes” o “más antiguos”).
 
-Además se puede participar votando. Cada eje tiene como posibilidad agregar una **acción específica.** Hay cinco tipos de acciones adicionales:
+Además se puede participar votando. Cada eje o propuesta tiene como posibilidad agregar una **acción específica.** Hay cinco tipos de acciones adicionales:
 
  - **Voto**: contiene las opciones “a favor”, “abstención” y “en contra”.
  - **Encuesta**: se presenta un listado de opciones para elegir una de ellas.
