@@ -5,6 +5,8 @@ import bus from 'bus'
 import config from 'lib/config'
 import FormAsync from 'lib/frontend/site/form-async'
 import userConnector from 'lib/frontend/site/connectors/user'
+import BtnFacebook from './btn-facebook'
+
 
 export class SignIn extends Component {
   constructor (props) {
@@ -149,10 +151,13 @@ export class SignIn extends Component {
           <div className='circle'>
             <i className='icon-login' />
           </div>
+          {!config.facebookSignin && (
             <div className='title-page'>
               <h1>{t('header.signin')}</h1>
             </div>
+          )}
         </div>
+         {config.facebookSignin && <FacebookForm />}
         {form}
       </div>
     )
@@ -160,3 +165,12 @@ export class SignIn extends Component {
 }
 
 export default userConnector(SignIn)
+
+function FacebookForm () {
+  return (
+    <div className='facebook-auth-form'>
+      <BtnFacebook />
+      <p className='muted'>{t('signin.or-login-with-email')}</p>
+    </div>
+  )
+}
