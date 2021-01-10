@@ -1,4 +1,4 @@
-# version 1.0
+# version 1.2
 name: Build and push
 on:
   push:
@@ -24,14 +24,6 @@ jobs:
           registry: ghcr.io
           username: ${{ secrets.REGISTRY_USER }}
           password: ${{ secrets.REGISTRY_PASSWORD }}
-      - name: Trigger stack update
-        uses: fjogeleit/http-request-action@master
-        with:
-          url: ${{ secrets.STACK_URL }}
-          method: 'POST'
-          customHeaders: '{"Accept":  "application/vnd.github.everest-preview+json"}'
-          bearerToken: ${{ secrets.REGISTRY_PASSWORD }}
-          data: '{"event_type": "update-stack"}'
       - name: Notify Slack
         uses: craftech-io/slack-action@v1
         with:
